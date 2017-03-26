@@ -1,5 +1,3 @@
-<!DOCTYPE html>
-<html>
 <head>
   <link rel="stylesheet" href="styles.css">
 
@@ -63,7 +61,7 @@
 </nav>
 
 <div class="container-fluid">
-  <div class="col-sm-2" style="padding: 1; margin: 0;">
+  <div class="col-sm-2" style="padding: 0; margin: 0;">
 	<div class="list" style="margin-bottom: 15px">
 	  <span class="list-group-item active" style="font-weight: bold">Categories</span>
 	  <a href="#" class="list-group-item">Vegetarian</a>
@@ -77,21 +75,74 @@
 	  <a href="#" class="list-group-item">Something New</a>
 	</div>
   </div>  
-  <div class="col-md-7" style="padding: 5; margin: 0;<!--border: 4px solid black; border-radius: 8px;-->">
-	<h1>Jalepeno Popper Grilled Cheese Sandwich</h1>
+
+
+<?php
+
+$servername = "localhost";
+$username = "brooke";
+$password = "root";
+$dbname = "ez_recipies_database";
+
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+} 
+
+$query1 = "SELECT title, image_url FROM recipe WHERE recipe_id = " .$_GET["recipe_id"];
+$query2 = "SELECT * FROM recipe JOIN ingredients ON ingredients.recipe_id = recipe.recipe_id WHERE recipe.recipe_id = " . $_GET["recipe_id"];
+$result1 = $conn->query($query1);
+$result2 = $conn->query($query2);
+
+if ($result1->num_rows > 0) {
+	// output data of each row
+	while($row = $result1->fetch_array()) {
+	
+?>
+
+
+  <div class="col-md-7">
+	<h1><?php echo $row["title"]; ?></h1>
   </div>
-  <div class="col-md-4" style="padding: 1; margin: 0;<!--border: 4px solid black; border-radius: 8px;-->">
-	<img src="http://static.food2fork.com/Jalapeno2BPopper2BGrilled2BCheese2BSandwich2B12B500fd186186.jpg" alt="Jalapeno Popper Grilled Cheese Sandwich" class="img-rounded" />
+  <div class="col-md-4">
+	<img src="<?php echo $row["image_url"] ?>" alt="<?php echo $row["title"]; ?>" class="img-rounded" style="width: 100%;" />
   </div>
-  <div class="col-md-4 col-md-offset-2" style="padding: 0; margin: 0;<!--border: 4px solid black; border-radius: 8px;-->">
-	<ul><li><strong>2</strong> jalapeno peppers, cut in half lengthwise and seeded</li>
-		<li><strong>2</strong> slices sour dough bread</li>
-		<li><strong>1</strong> tablespoon butter, room temperature</li>
-		<li><strong>2</strong> tablespoons cream cheese, room temperature</li>
-		<li><strong>1/2</strong> cup jack and cheddar cheese, shredded</li>
-		<li><strong>1</strong> tablespoon tortilla chips, crumbled</li>
+  <div class="col-md-4">
+	<ul style="padding: 0;">
+<?php
+	}
+}
+else{
+	echo "0 results";
+}
+
+if ($result2->num_rows > 0) {
+	// output data of each row
+	while($row = $result2->fetch_array()) {
+
+?>
+
+ 
+
+		<li><strong><?php echo $row["quantity"]?> <?php echo $row["unit_of_measure"]?></strong> <?php echo $row["ingredient_name"] ?> </li>
+
+
+
+<?php
+	}
+}
+else{
+	echo "0 results";
+}
+
+$conn->close();
+?>
+
 	</ul>
   </div>
+
+
 </div>
      
 
@@ -103,4 +154,3 @@
   <!-- Latest compiled and minified JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </footer>
-</html> 
