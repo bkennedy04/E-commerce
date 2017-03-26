@@ -79,16 +79,7 @@
 
 <?php
 
-$servername = "localhost";
-$username = "brooke";
-$password = "root";
-$dbname = "ez_recipies_database";
-
-$conn = new mysqli($servername, $username, $password, $dbname);
-
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-} 
+include "db_connect.php";
 
 $query1 = "SELECT title, image_url FROM recipe WHERE recipe_id = " .$_GET["recipe_id"];
 $query2 = "SELECT * FROM recipe JOIN ingredients ON ingredients.recipe_id = recipe.recipe_id WHERE recipe.recipe_id = " . $_GET["recipe_id"];
