@@ -74,6 +74,9 @@ body {
 .thumbnail p {
 	margin: 5px 0 0 0;
 	text-align: left;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
 .thumbnail .btn
 {
@@ -121,15 +124,6 @@ body {
 	border-radius: 8px;
 	
 }
-
-#groceries{
-	padding-left:15px;
-}
-
-#grocery_item h3 {
-	text-align:center;
-}
-
 #recipe {
 	margin: auto;
 	border: 3px ridge silver;
@@ -142,6 +136,44 @@ body {
 .navbar {
 	margin-bottom: 15px !important;
 }
+
+#dish_title {
+	padding;0px;
+}
+
+#recipe_image {
+	max-height: 100%;
+	max-width: 100%;
+}
+
+#ingredients {
+	margin-left:25px;
+	font-size: 150%;
+}
+
+#buy_ingredients_btn {
+	margin-left:25px;
+}
+
+#instructions {
+}
+
+#instructions h2{
+}
+
+#instructions ol {
+	font-size: 125%;
+}
+
+#extra_pages {
+	margin: 0px 125px;
+}
+
+/*#grocery_item {
+	width:225px;
+	height:225px;
+}*/
+
 /*#pic1 {
 	height: 100px;
 	width: 120px;
@@ -153,7 +185,6 @@ body {
 	background-image: url('http://static.food2fork.com/Jalapeno2BPopper2BGrilled2BCheese2BSandwich2B12B500fd186186.jpg');
 	background-size: cover;
 }
-
 #pic2 {
 	height: 100px;
 	width: 120px;
@@ -165,7 +196,6 @@ body {
 	background-image: url('http://static.food2fork.com/icedcoffee5766.jpg');
 	background-size: cover;
 }
-
 #pic3 {
 	height: 100px;
 	width: 120px;
@@ -177,7 +207,6 @@ body {
 	background-image: url('http://static.food2fork.com/CrashHotPotatoes5736.jpg');
 	background-size: cover;
 }
-
 #pic4 {
 	height: 100px;
 	width: 120px;
