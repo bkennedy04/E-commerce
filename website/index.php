@@ -1,6 +1,4 @@
 
-<html>
-
 <?php
 	$page_name = "Home";
 	include "header.php"; 
