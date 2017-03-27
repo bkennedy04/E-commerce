@@ -28,7 +28,7 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li class="active"><a href="index.php">Home<span class="sr-only">(current)</span></a></li>
-        <li><a href="#">Grocery Store</a></li>
+        <li><a href="grocery.html">Grocery Store</a></li>
 		<li><a href="#">User Account</a></li>
 		<li><a href="#">Shopping Cart</a></li>
         <!--li class="dropdown">
