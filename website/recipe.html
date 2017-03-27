@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <link rel="stylesheet" href="styles.css">
-
+  <meta charset="utf-8">
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
+  
+  <meta name="viewport" content="width = device-width, initial-scale = 1">
+  
   <!-- Set favicon -->
   <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
 
@@ -62,38 +64,76 @@
     </div><!-- /.navbar-collapse -->
 </nav>
 
-<div class="container-fluid">
-  <div class="col-sm-2" style="padding: 1; margin: 0;">
-	<div class="list" style="margin-bottom: 15px">
-	  <span class="list-group-item active" style="font-weight: bold">Categories</span>
-	  <a href="#" class="list-group-item">Vegetarian</a>
-	  <a href="#" class="list-group-item">Italian</a>
-	  <a href="#" class="list-group-item">American</a>
-	  <a href="#" class="list-group-item">Popular Recipes</a>
+
+<div id="wrapper">
+	<div id="sidebar-wrapper">
+		<div class="col-sm-2" style="padding: 1; margin: 0;">
+			<div class="list" style="margin-bottom: 15px">
+				<span class="list-group-item active" style="font-weight: bold">Categories</span>
+					<a href="#" class="list-group-item">Vegetarian</a>
+					<a href="#" class="list-group-item">Italian</a>
+					<a href="#" class="list-group-item">American</a>
+					<a href="#" class="list-group-item">Popular Recipes</a>
+			</div>
+			<div class="list" style="margin-bottom: 15px">
+				<span class="list-group-item active" style="font-weight: bold">Tools</span>
+					<a href="#" class="list-group-item">Popular Recipes</a>
+					<a href="#" class="list-group-item">Something New</a>
+			</div>
+		</div> 
 	</div>
-	<div class="list" style="margin-bottom: 15px">
-	  <span class="list-group-item active" style="font-weight: bold">Tools</span>
-	  <a href="#" class="list-group-item">Popular Recipes</a>
-	  <a href="#" class="list-group-item">Something New</a>
+	<div id="page-content-wrapper">
+		<div class="container">
+			<div class="row">
+				<div id="dish_title" class="col-md-10">
+					<h1>Jalepeno Popper Grilled Cheese Sandwich</h1>
+				</div>
+				<div class="col-md-5" style="padding: 0; margin: 0;<!--border: 4px solid black; border-radius: 8px;-->">
+					<div id="recipe_image">
+						<img src="http://static.food2fork.com/Jalapeno2BPopper2BGrilled2BCheese2BSandwich2B12B500fd186186.jpg" alt="Jalapeno Popper Grilled Cheese Sandwich" class="img-rounded" style="object-fit: contain;"/>
+					</div>
+				</div>
+				<div id="ingredients" class="col-md-5">
+					<ul><strong>2</strong> jalapeno peppers, cut in half lengthwise and seeded<br>
+						<strong>2</strong> slices sour dough bread<br>
+						<strong>1</strong> tablespoon butter, room temperature<br>
+						<strong>2</strong> tablespoons cream cheese, room temperature<br>
+						<strong>1/2</strong> cup jack and cheddar cheese, shredded<br>
+						<strong>1</strong> tablespoon tortilla chips, crumbled
+					</ul>
+					<br>
+					<div id="buy_ingredients_btn" class="buy-ingredients-btn"><a href="#" class="btn btn-primary btn-lg btn-block" role="button">Get Ingredients</a></div>
+				</div>
+			</div>
+			<div class="row">
+				<div id="instructions" class="col-lg-12">
+					<h2>Directions</h2>
+					<ol type="1">
+						<li>Place the peppers on a baking sheet with the 
+						cut side facing down.</li>
+						<li>Place the baking sheet on the top shelf in the oven 
+						and broil until the outer layer of the skin has 
+						blackened, about 8-14 minutes.</li>
+						<li>Place the peppers in a zip-lock bag or other sealable 
+						container, seal and let them cool until you can handle 
+						them, about 20 minutes.</li>
+						<li>Remove the skins from the peppers. The skins should 
+						easily "pinch" off.</li>
+						<li>Butter the outside of each slice of bread and spread the 
+						cream cheese on the inside. Sprinkle half of the cheese on 
+						the cream cheese of one slice of bread, top with 
+						the jalapenos, crumbled tortilla chips, the remaining 
+						cheese and finally the other slice of bread.</li>
+						<li>Heat a non-stick pan over medium heat.</li>
+						<li>Add the sandwich and grill until golden brown and the 
+						cheese has melted, about 2-4 minutes per side.</li>
+					</ol>
+				</div>
+			</div>
+		</div>
 	</div>
-  </div>  
-  <div class="col-md-7" style="padding: 5; margin: 0;<!--border: 4px solid black; border-radius: 8px;-->">
-	<h1>Jalepeno Popper Grilled Cheese Sandwich</h1>
-  </div>
-  <div class="col-md-4" style="padding: 1; margin: 0;<!--border: 4px solid black; border-radius: 8px;-->">
-	<img src="http://static.food2fork.com/Jalapeno2BPopper2BGrilled2BCheese2BSandwich2B12B500fd186186.jpg" alt="Jalapeno Popper Grilled Cheese Sandwich" class="img-rounded" />
-  </div>
-  <div class="col-md-4 col-md-offset-2" style="padding: 0; margin: 0;<!--border: 4px solid black; border-radius: 8px;-->">
-	<ul><li><strong>2</strong> jalapeno peppers, cut in half lengthwise and seeded</li>
-		<li><strong>2</strong> slices sour dough bread</li>
-		<li><strong>1</strong> tablespoon butter, room temperature</li>
-		<li><strong>2</strong> tablespoons cream cheese, room temperature</li>
-		<li><strong>1/2</strong> cup jack and cheddar cheese, shredded</li>
-		<li><strong>1</strong> tablespoon tortilla chips, crumbled</li>
-	</ul>
-  </div>
 </div>
-     
+
 
 </body>
 <footer>
