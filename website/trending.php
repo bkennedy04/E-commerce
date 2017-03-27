@@ -1,15 +1,5 @@
 <?php
-
-$servername = "localhost";
-$username = "brooke";
-$password = "root";
-$dbname = "ez_recipies_database";
-
-$conn = new mysqli($servername, $username, $password, $dbname);
-
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-} 
+include "db_connect.php";
 
 $query1 = "SELECT * FROM recipe ORDER BY social_rank ASC LIMIT 6";
 $result = $conn->query($query1);
