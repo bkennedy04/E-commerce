@@ -121,6 +121,15 @@ body {
 	border-radius: 8px;
 	
 }
+
+#groceries{
+	padding-left:15px;
+}
+
+#grocery_item h3 {
+	text-align:center;
+}
+
 #recipe {
 	margin: auto;
 	border: 3px ridge silver;
