@@ -147,74 +147,8 @@ body {
 }
 
 #ingredients {
-	margin-left:25px;
 	font-size: 150%;
 }
 
-#buy_ingredients_btn {
-	margin-left:25px;
-}
 
-#instructions {
-}
 
-#instructions h2{
-}
-
-#instructions ol {
-	font-size: 125%;
-}
-
-#extra_pages {
-	margin: 0px 125px;
-}
-
-/*#grocery_item {
-	width:225px;
-	height:225px;
-}*/
-
-/*#pic1 {
-	height: 100px;
-	width: 120px;
-	float:left;
-	margin-left:10px;
-	display:block;
-	border: 3px ridge silver;
-	border-radius: 8px;
-	background-image: url('http://static.food2fork.com/Jalapeno2BPopper2BGrilled2BCheese2BSandwich2B12B500fd186186.jpg');
-	background-size: cover;
-}
-#pic2 {
-	height: 100px;
-	width: 120px;
-	float:left;
-	margin-left:10px;
-	display:block;
-	border: 3px ridge silver;
-	border-radius: 8px;
-	background-image: url('http://static.food2fork.com/icedcoffee5766.jpg');
-	background-size: cover;
-}
-#pic3 {
-	height: 100px;
-	width: 120px;
-	float:left;
-	margin-left:10px;
-	display:block;
-	border: 3px ridge silver;
-	border-radius: 8px;
-	background-image: url('http://static.food2fork.com/CrashHotPotatoes5736.jpg');
-	background-size: cover;
-}
-#pic4 {
-	height: 100px;
-	width: 120px;
-	float:left;
-	margin-left:10px;
-	display:block;
-	border: 3px ridge silver;
-	border-radius: 8px;
-	background-image: url('http://static.food2fork.com/avocadomacandcheesedc99.jpg');
-	background-size: cover;
-}*/
