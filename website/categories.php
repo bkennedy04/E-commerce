@@ -3,8 +3,13 @@
 	include "header.php"; 
 ?>
 
-  <div id="groceries" class="col-sm-10">
+  <div id="dish_categories" class="col-sm-10">
     <div class="row">
+		<div id="categories" class="col-md-10">
+			<h1>All Recipes</h1>
+		</div>
+	</div>
+	<div class="row">
       <div id="grocery_item" class="col-md-2">
         <div class="thumbnail">
           <img src="https://www.thealthbenefitsof.com/wp-content/uploads/2016/05/health-benefits-of-jalapeno-peppers-640x500.jpg" alt="Jalapeno Popper Grilled Cheese Sandwich" class="img-rounded" />
