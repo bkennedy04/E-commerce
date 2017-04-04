@@ -11,7 +11,7 @@ $result = $conn->query($query1);
 <div id="dish_categories" class="col-sm-10">
     <div class="row">
 		<div id="categories" class="col-md-10">
-			<h1><?php echo $_GET["category"];?></h1>
+			<h1><?php echo $_GET["category"];?> Recipes</h1>
 		</div>
 	</div>
 	<div class="row">
