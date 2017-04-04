@@ -70,10 +70,10 @@
   <div class="col-sm-2" style="padding: 0; margin: 0;">
 	<div class="list" style="margin-bottom: 15px">
 	  <span class="list-group-item active" style="font-weight: bold">Categories</span>
-	  <a href="#" class="list-group-item">Vegetarian</a>
-	  <a href="#" class="list-group-item">Italian</a>
-	  <a href="#" class="list-group-item">American</a>
-	  <a href="#" class="list-group-item">Drinks</a>
+	  <a href="category.php?category=Vegetarian" class="list-group-item">Vegetarian</a>
+	  <a href="category.php?category=Italian" class="list-group-item">Italian</a>
+	  <a href="category.php?category=American" class="list-group-item">American</a>
+	  <a href="category.php?category=Drinks" class="list-group-item">Drinks</a>
 	</div>
 	<div class="list" style="margin-bottom: 15px">
 	  <span class="list-group-item active" style="font-weight: bold">Tools</span>
