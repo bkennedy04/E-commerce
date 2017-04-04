@@ -5,124 +5,112 @@
 <!--Did not include Kosher Salt, considered it was the same as regular salt-->
   <div id="groceries" class="col-sm-10">
     <div class="row">
-      <div id="grocery_item" class="col-md-2" style="padding-bottom:10px;">
+      <div id="grocery_item" class="col-md-2">
         <div class="thumbnail">
           <img src="img/parmesan cheese.jpg" alt="Parmesan Cheese" class="img-rounded" />
             <h3 style="text-align: center">Parmesan Cheese</h3>
-            <!--div class="btn-group btn-block"-->
-			  <button type="button" class="col-md-1 btn btn-danger btn-block">$4.99 (0)</button>
-			  <button type="button" class="col-md-1 btn btn-danger btn-block dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-				<span class="caret"></span>
-				<span class="sr-only">Toggle Dropdown</span>
+            <div class="btn-group btn-block">
+			  <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+				$4.99 (0) <span class="caret"></span>
 			  </button>
-			  <ul class="dropdown-menu btn-block">
+			  <ul class="dropdown-menu">
 				<li><a href="#">Add 1 to Cart</a></li>
 				<li><a href="#">Add 2 to Cart</a></li>
 				<li><a href="#">Add 5 to Cart</a></li>
 				<!--li role="separator" class="divider"></li>
 				<li><a href="#">Separated link</a></li-->
 			  </ul>
-			<!--/div-->
+			</div>
           </div>
         </div>
-      <div id="grocery_item" class="col-md-2" style="padding-bottom:10px;">
+      <div id="grocery_item" class="col-md-2">
         <div class="thumbnail">
           <img src="img/garlic salt.jpg" alt="Garlic Salt" class="img-rounded" />
             <h3 style="text-align: center">Garlic Salt</h3>
-            <!--div class="btn-group btn-block"-->
-			  <button type="button" class="col-md-1 btn btn-danger btn-block">$4.99 (0)</button>
-			  <button type="button" class="col-md-1 btn btn-danger btn-block dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-				<span class="caret"></span>
-				<span class="sr-only">Toggle Dropdown</span>
+            <div class="btn-group btn-block">
+			  <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+				$4.99 (0) <span class="caret"></span>
 			  </button>
-			  <ul class="dropdown-menu btn-block">
-				<li><a href="#">Action</a></li>
-				<li><a href="#">Another action</a></li>
-				<li><a href="#">Something else here</a></li>
-				<li role="separator" class="divider"></li>
-				<li><a href="#">Separated link</a></li>
+			  <ul class="dropdown-menu">
+				<li><a href="#">Add 1 to Cart</a></li>
+				<li><a href="#">Add 2 to Cart</a></li>
+				<li><a href="#">Add 5 to Cart</a></li>
+				<!--li role="separator" class="divider"></li>
+				<li><a href="#">Separated link</a></li-->
 			  </ul>
-			<!--/div-->
+			</div>
           </div>
         </div>
-		<div id="grocery_item" class="col-md-2" style="padding-bottom:10px;">
+		<div id="grocery_item" class="col-md-2">
         <div class="thumbnail">
           <img src="img/potatoe.jpg" alt="Yukon Gold Potatoes" class="img-rounded" />
             <h3 style="text-align: center">Yukon Gold Potatoes</h3>
-            <!--div class="btn-group btn-block"-->
-			  <button type="button" class="col-md-1 btn btn-danger btn-block">$4.99 (0)</button>
-			  <button type="button" class="col-md-1 btn btn-danger btn-block dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-				<span class="caret"></span>
-				<span class="sr-only">Toggle Dropdown</span>
+            <div class="btn-group btn-block">
+			  <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+				$4.99 (0) <span class="caret"></span>
 			  </button>
-			  <ul class="dropdown-menu btn-block">
-				<li><a href="#">Action</a></li>
-				<li><a href="#">Another action</a></li>
-				<li><a href="#">Something else here</a></li>
-				<li role="separator" class="divider"></li>
-				<li><a href="#">Separated link</a></li>
+			  <ul class="dropdown-menu">
+				<li><a href="#">Add 1 to Cart</a></li>
+				<li><a href="#">Add 2 to Cart</a></li>
+				<li><a href="#">Add 5 to Cart</a></li>
+				<!--li role="separator" class="divider"></li>
+				<li><a href="#">Separated link</a></li-->
 			  </ul>
-			<!--/div-->
+			</div>
           </div>
         </div>
-		<div id="grocery_item" class="col-md-2" style="padding-bottom:10px;">
+		<div id="grocery_item" class="col-md-2">
         <div class="thumbnail">
           <img src="img/brown sugar.jpg" alt="Brown Sugar" class="img-rounded" />
             <h3 style="text-align: center">Brown Sugar</h3>
-            <!--div class="btn-group btn-block"-->
-			  <button type="button" class="col-md-1 btn btn-danger btn-block">$4.99 (0)</button>
-			  <button type="button" class="col-md-1 btn btn-danger btn-block dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-				<span class="caret"></span>
-				<span class="sr-only">Toggle Dropdown</span>
+            <div class="btn-group btn-block">
+			  <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+				$4.99 (0) <span class="caret"></span>
 			  </button>
-			  <ul class="dropdown-menu btn-block">
-				<li><a href="#">Action</a></li>
-				<li><a href="#">Another action</a></li>
-				<li><a href="#">Something else here</a></li>
-				<li role="separator" class="divider"></li>
-				<li><a href="#">Separated link</a></li>
+			  <ul class="dropdown-menu">
+				<li><a href="#">Add 1 to Cart</a></li>
+				<li><a href="#">Add 2 to Cart</a></li>
+				<li><a href="#">Add 5 to Cart</a></li>
+				<!--li role="separator" class="divider"></li>
+				<li><a href="#">Separated link</a></li-->
 			  </ul>
-			<!--/div-->
+			</div>
           </div>
         </div>
-		<div id="grocery_item" class="col-md-2" style="padding-bottom:10px;">
+		<div id="grocery_item" class="col-md-2">
         <div class="thumbnail">
           <img src="img/dr. pepper.jpg" alt="Dr. Pepper" class="img-rounded" />
             <h3 style="text-align: center">Dr. Pepper</h3>
-            <!--div class="btn-group btn-block"-->
-			  <button type="button" class="col-md-1 btn btn-danger btn-block">$4.99 (0)</button>
-			  <button type="button" class="col-md-1 btn btn-danger btn-block dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-				<span class="caret"></span>
-				<span class="sr-only">Toggle Dropdown</span>
+            <div class="btn-group btn-block">
+			  <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+				$4.99 (0) <span class="caret"></span>
 			  </button>
-			  <ul class="dropdown-menu btn-block">
-				<li><a href="#">Action</a></li>
-				<li><a href="#">Another action</a></li>
-				<li><a href="#">Something else here</a></li>
-				<li role="separator" class="divider"></li>
-				<li><a href="#">Separated link</a></li>
+			  <ul class="dropdown-menu">
+				<li><a href="#">Add 1 to Cart</a></li>
+				<li><a href="#">Add 2 to Cart</a></li>
+				<li><a href="#">Add 5 to Cart</a></li>
+				<!--li role="separator" class="divider"></li>
+				<li><a href="#">Separated link</a></li-->
 			  </ul>
-			<!--/div-->
+			</div>
           </div>
         </div>
-		<div id="grocery_item" class="col-md-2" style="padding-bottom:10px;">
+		<div id="grocery_item" class="col-md-2">
         <div class="thumbnail">
           <img src="img/chipotle peppers.jpg" alt="Chipotle Peppers" class="img-rounded" />
             <h3 style="text-align: center">Chipotle Peppers</h3>
-            <!--div class="btn-group btn-block"-->
-			  <button type="button" class="col-md-1 btn btn-danger btn-block">$4.99 (0)</button>
-			  <button type="button" class="col-md-1 btn btn-danger btn-block dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-				<span class="caret"></span>
-				<span class="sr-only">Toggle Dropdown</span>
+            <div class="btn-group btn-block">
+			  <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+				$4.99 (0) <span class="caret"></span>
 			  </button>
-			  <ul class="dropdown-menu btn-block">
-				<li><a href="#">Action</a></li>
-				<li><a href="#">Another action</a></li>
-				<li><a href="#">Something else here</a></li>
-				<li role="separator" class="divider"></li>
-				<li><a href="#">Separated link</a></li>
+			  <ul class="dropdown-menu">
+				<li><a href="#">Add 1 to Cart</a></li>
+				<li><a href="#">Add 2 to Cart</a></li>
+				<li><a href="#">Add 5 to Cart</a></li>
+				<!--li role="separator" class="divider"></li>
+				<li><a href="#">Separated link</a></li-->
 			  </ul>
-			<!--/div-->
+			</div>
           </div>
         </div>
 		<div id="grocery_item" class="col-md-2">
@@ -152,11 +140,11 @@
 				$4.99 (0) <span class="caret"></span>
 			  </button>
 			  <ul class="dropdown-menu">
-				<li><a href="#">Action</a></li>
-				<li><a href="#">Another action</a></li>
-				<li><a href="#">Something else here</a></li>
-				<li role="separator" class="divider"></li>
-				<li><a href="#">Separated link</a></li>
+				<li><a href="#">Add 1 to Cart</a></li>
+				<li><a href="#">Add 2 to Cart</a></li>
+				<li><a href="#">Add 5 to Cart</a></li>
+				<!--li role="separator" class="divider"></li>
+				<li><a href="#">Separated link</a></li-->
 			  </ul>
 			</div>
           </div>
@@ -170,11 +158,11 @@
 				$4.99 (0) <span class="caret"></span>
 			  </button>
 			  <ul class="dropdown-menu">
-				<li><a href="#">Action</a></li>
-				<li><a href="#">Another action</a></li>
-				<li><a href="#">Something else here</a></li>
-				<li role="separator" class="divider"></li>
-				<li><a href="#">Separated link</a></li>
+				<li><a href="#">Add 1 to Cart</a></li>
+				<li><a href="#">Add 2 to Cart</a></li>
+				<li><a href="#">Add 5 to Cart</a></li>
+				<!--li role="separator" class="divider"></li>
+				<li><a href="#">Separated link</a></li-->
 			  </ul>
 			</div>
           </div>
@@ -188,11 +176,11 @@
 				$4.99 (0) <span class="caret"></span>
 			  </button>
 			  <ul class="dropdown-menu">
-				<li><a href="#">Action</a></li>
-				<li><a href="#">Another action</a></li>
-				<li><a href="#">Something else here</a></li>
-				<li role="separator" class="divider"></li>
-				<li><a href="#">Separated link</a></li>
+				<li><a href="#">Add 1 to Cart</a></li>
+				<li><a href="#">Add 2 to Cart</a></li>
+				<li><a href="#">Add 5 to Cart</a></li>
+				<!--li role="separator" class="divider"></li>
+				<li><a href="#">Separated link</a></li-->
 			  </ul>
 			</div>
           </div>
@@ -206,11 +194,11 @@
 				$4.99 (0) <span class="caret"></span>
 			  </button>
 			  <ul class="dropdown-menu">
-				<li><a href="#">Action</a></li>
-				<li><a href="#">Another action</a></li>
-				<li><a href="#">Something else here</a></li>
-				<li role="separator" class="divider"></li>
-				<li><a href="#">Separated link</a></li>
+				<li><a href="#">Add 1 to Cart</a></li>
+				<li><a href="#">Add 2 to Cart</a></li>
+				<li><a href="#">Add 5 to Cart</a></li>
+				<!--li role="separator" class="divider"></li>
+				<li><a href="#">Separated link</a></li-->
 			  </ul>
 			</div>
           </div>
@@ -224,11 +212,11 @@
 				$4.99 (0) <span class="caret"></span>
 			  </button>
 			  <ul class="dropdown-menu">
-				<li><a href="#">Action</a></li>
-				<li><a href="#">Another action</a></li>
-				<li><a href="#">Something else here</a></li>
-				<li role="separator" class="divider"></li>
-				<li><a href="#">Separated link</a></li>
+				<li><a href="#">Add 1 to Cart</a></li>
+				<li><a href="#">Add 2 to Cart</a></li>
+				<li><a href="#">Add 5 to Cart</a></li>
+				<!--li role="separator" class="divider"></li>
+				<li><a href="#">Separated link</a></li-->
 			  </ul>
 			</div>
           </div>
@@ -242,11 +230,11 @@
 				$4.99 (0) <span class="caret"></span>
 			  </button>
 			  <ul class="dropdown-menu">
-				<li><a href="#">Action</a></li>
-				<li><a href="#">Another action</a></li>
-				<li><a href="#">Something else here</a></li>
-				<li role="separator" class="divider"></li>
-				<li><a href="#">Separated link</a></li>
+				<li><a href="#">Add 1 to Cart</a></li>
+				<li><a href="#">Add 2 to Cart</a></li>
+				<li><a href="#">Add 5 to Cart</a></li>
+				<!--li role="separator" class="divider"></li>
+				<li><a href="#">Separated link</a></li-->
 			  </ul>
 			</div>
           </div>
@@ -260,11 +248,11 @@
 				$4.99 (0) <span class="caret"></span>
 			  </button>
 			  <ul class="dropdown-menu">
-				<li><a href="#">Action</a></li>
-				<li><a href="#">Another action</a></li>
-				<li><a href="#">Something else here</a></li>
-				<li role="separator" class="divider"></li>
-				<li><a href="#">Separated link</a></li>
+				<li><a href="#">Add 1 to Cart</a></li>
+				<li><a href="#">Add 2 to Cart</a></li>
+				<li><a href="#">Add 5 to Cart</a></li>
+				<!--li role="separator" class="divider"></li>
+				<li><a href="#">Separated link</a></li-->
 			  </ul>
 			</div>
           </div>
@@ -278,11 +266,11 @@
 				$4.99 (0) <span class="caret"></span>
 			  </button>
 			  <ul class="dropdown-menu">
-				<li><a href="#">Action</a></li>
-				<li><a href="#">Another action</a></li>
-				<li><a href="#">Something else here</a></li>
-				<li role="separator" class="divider"></li>
-				<li><a href="#">Separated link</a></li>
+				<li><a href="#">Add 1 to Cart</a></li>
+				<li><a href="#">Add 2 to Cart</a></li>
+				<li><a href="#">Add 5 to Cart</a></li>
+				<!--li role="separator" class="divider"></li>
+				<li><a href="#">Separated link</a></li-->
 			  </ul>
 			</div>
           </div>
@@ -296,11 +284,11 @@
 				$4.99 (0) <span class="caret"></span>
 			  </button>
 			  <ul class="dropdown-menu">
-				<li><a href="#">Action</a></li>
-				<li><a href="#">Another action</a></li>
-				<li><a href="#">Something else here</a></li>
-				<li role="separator" class="divider"></li>
-				<li><a href="#">Separated link</a></li>
+				<li><a href="#">Add 1 to Cart</a></li>
+				<li><a href="#">Add 2 to Cart</a></li>
+				<li><a href="#">Add 5 to Cart</a></li>
+				<!--li role="separator" class="divider"></li>
+				<li><a href="#">Separated link</a></li-->
 			  </ul>
 			</div>
           </div>
@@ -314,11 +302,11 @@
 				$4.99 (0) <span class="caret"></span>
 			  </button>
 			  <ul class="dropdown-menu">
-				<li><a href="#">Action</a></li>
-				<li><a href="#">Another action</a></li>
-				<li><a href="#">Something else here</a></li>
-				<li role="separator" class="divider"></li>
-				<li><a href="#">Separated link</a></li>
+				<li><a href="#">Add 1 to Cart</a></li>
+				<li><a href="#">Add 2 to Cart</a></li>
+				<li><a href="#">Add 5 to Cart</a></li>
+				<!--li role="separator" class="divider"></li>
+				<li><a href="#">Separated link</a></li-->
 			  </ul>
 			</div>
           </div>
@@ -332,11 +320,11 @@
 				$4.99 (0) <span class="caret"></span>
 			  </button>
 			  <ul class="dropdown-menu">
-				<li><a href="#">Action</a></li>
-				<li><a href="#">Another action</a></li>
-				<li><a href="#">Something else here</a></li>
-				<li role="separator" class="divider"></li>
-				<li><a href="#">Separated link</a></li>
+				<li><a href="#">Add 1 to Cart</a></li>
+				<li><a href="#">Add 2 to Cart</a></li>
+				<li><a href="#">Add 5 to Cart</a></li>
+				<!--li role="separator" class="divider"></li>
+				<li><a href="#">Separated link</a></li-->
 			  </ul>
 			</div>
           </div>
@@ -350,11 +338,11 @@
 				$4.99 (0) <span class="caret"></span>
 			  </button>
 			  <ul class="dropdown-menu">
-				<li><a href="#">Action</a></li>
-				<li><a href="#">Another action</a></li>
-				<li><a href="#">Something else here</a></li>
-				<li role="separator" class="divider"></li>
-				<li><a href="#">Separated link</a></li>
+				<li><a href="#">Add 1 to Cart</a></li>
+				<li><a href="#">Add 2 to Cart</a></li>
+				<li><a href="#">Add 5 to Cart</a></li>
+				<!--li role="separator" class="divider"></li>
+				<li><a href="#">Separated link</a></li-->
 			  </ul>
 			</div>
           </div>
@@ -368,11 +356,11 @@
 				$4.99 (0) <span class="caret"></span>
 			  </button>
 			  <ul class="dropdown-menu">
-				<li><a href="#">Action</a></li>
-				<li><a href="#">Another action</a></li>
-				<li><a href="#">Something else here</a></li>
-				<li role="separator" class="divider"></li>
-				<li><a href="#">Separated link</a></li>
+				<li><a href="#">Add 1 to Cart</a></li>
+				<li><a href="#">Add 2 to Cart</a></li>
+				<li><a href="#">Add 5 to Cart</a></li>
+				<!--li role="separator" class="divider"></li>
+				<li><a href="#">Separated link</a></li-->
 			  </ul>
 			</div>
           </div>
@@ -386,11 +374,11 @@
 				$4.99 (0) <span class="caret"></span>
 			  </button>
 			  <ul class="dropdown-menu">
-				<li><a href="#">Action</a></li>
-				<li><a href="#">Another action</a></li>
-				<li><a href="#">Something else here</a></li>
-				<li role="separator" class="divider"></li>
-				<li><a href="#">Separated link</a></li>
+				<li><a href="#">Add 1 to Cart</a></li>
+				<li><a href="#">Add 2 to Cart</a></li>
+				<li><a href="#">Add 5 to Cart</a></li>
+				<!--li role="separator" class="divider"></li>
+				<li><a href="#">Separated link</a></li-->
 			  </ul>
 			</div>
           </div>
@@ -404,11 +392,11 @@
 				$4.99 (0) <span class="caret"></span>
 			  </button>
 			  <ul class="dropdown-menu">
-				<li><a href="#">Action</a></li>
-				<li><a href="#">Another action</a></li>
-				<li><a href="#">Something else here</a></li>
-				<li role="separator" class="divider"></li>
-				<li><a href="#">Separated link</a></li>
+				<li><a href="#">Add 1 to Cart</a></li>
+				<li><a href="#">Add 2 to Cart</a></li>
+				<li><a href="#">Add 5 to Cart</a></li>
+				<!--li role="separator" class="divider"></li>
+				<li><a href="#">Separated link</a></li-->
 			  </ul>
 			</div>
           </div>
@@ -422,11 +410,11 @@
 				$4.99 (0) <span class="caret"></span>
 			  </button>
 			  <ul class="dropdown-menu">
-				<li><a href="#">Action</a></li>
-				<li><a href="#">Another action</a></li>
-				<li><a href="#">Something else here</a></li>
-				<li role="separator" class="divider"></li>
-				<li><a href="#">Separated link</a></li>
+				<li><a href="#">Add 1 to Cart</a></li>
+				<li><a href="#">Add 2 to Cart</a></li>
+				<li><a href="#">Add 5 to Cart</a></li>
+				<!--li role="separator" class="divider"></li>
+				<li><a href="#">Separated link</a></li-->
 			  </ul>
 			</div>
           </div>
@@ -440,11 +428,11 @@
 				$4.99 (0) <span class="caret"></span>
 			  </button>
 			  <ul class="dropdown-menu">
-				<li><a href="#">Action</a></li>
-				<li><a href="#">Another action</a></li>
-				<li><a href="#">Something else here</a></li>
-				<li role="separator" class="divider"></li>
-				<li><a href="#">Separated link</a></li>
+				<li><a href="#">Add 1 to Cart</a></li>
+				<li><a href="#">Add 2 to Cart</a></li>
+				<li><a href="#">Add 5 to Cart</a></li>
+				<!--li role="separator" class="divider"></li>
+				<li><a href="#">Separated link</a></li-->
 			  </ul>
 			</div>
           </div>
@@ -458,11 +446,11 @@
 				$4.99 (0) <span class="caret"></span>
 			  </button>
 			  <ul class="dropdown-menu">
-				<li><a href="#">Action</a></li>
-				<li><a href="#">Another action</a></li>
-				<li><a href="#">Something else here</a></li>
-				<li role="separator" class="divider"></li>
-				<li><a href="#">Separated link</a></li>
+				<li><a href="#">Add 1 to Cart</a></li>
+				<li><a href="#">Add 2 to Cart</a></li>
+				<li><a href="#">Add 5 to Cart</a></li>
+				<!--li role="separator" class="divider"></li>
+				<li><a href="#">Separated link</a></li-->
 			  </ul>
 			</div>
           </div>
@@ -476,11 +464,11 @@
 				$4.99 (0) <span class="caret"></span>
 			  </button>
 			  <ul class="dropdown-menu">
-				<li><a href="#">Action</a></li>
-				<li><a href="#">Another action</a></li>
-				<li><a href="#">Something else here</a></li>
-				<li role="separator" class="divider"></li>
-				<li><a href="#">Separated link</a></li>
+				<li><a href="#">Add 1 to Cart</a></li>
+				<li><a href="#">Add 2 to Cart</a></li>
+				<li><a href="#">Add 5 to Cart</a></li>
+				<!--li role="separator" class="divider"></li>
+				<li><a href="#">Separated link</a></li-->
 			  </ul>
 			</div>
           </div>
@@ -494,11 +482,11 @@
 				$4.99 (0) <span class="caret"></span>
 			  </button>
 			  <ul class="dropdown-menu">
-				<li><a href="#">Action</a></li>
-				<li><a href="#">Another action</a></li>
-				<li><a href="#">Something else here</a></li>
-				<li role="separator" class="divider"></li>
-				<li><a href="#">Separated link</a></li>
+				<li><a href="#">Add 1 to Cart</a></li>
+				<li><a href="#">Add 2 to Cart</a></li>
+				<li><a href="#">Add 5 to Cart</a></li>
+				<!--li role="separator" class="divider"></li>
+				<li><a href="#">Separated link</a></li-->
 			  </ul>
 			</div>
           </div>
@@ -512,11 +500,11 @@
 				$4.99 (0) <span class="caret"></span>
 			  </button>
 			  <ul class="dropdown-menu">
-				<li><a href="#">Action</a></li>
-				<li><a href="#">Another action</a></li>
-				<li><a href="#">Something else here</a></li>
-				<li role="separator" class="divider"></li>
-				<li><a href="#">Separated link</a></li>
+				<li><a href="#">Add 1 to Cart</a></li>
+				<li><a href="#">Add 2 to Cart</a></li>
+				<li><a href="#">Add 5 to Cart</a></li>
+				<!--li role="separator" class="divider"></li>
+				<li><a href="#">Separated link</a></li-->
 			  </ul>
 			</div>
           </div>
@@ -530,11 +518,11 @@
 				$4.99 (0) <span class="caret"></span>
 			  </button>
 			  <ul class="dropdown-menu">
-				<li><a href="#">Action</a></li>
-				<li><a href="#">Another action</a></li>
-				<li><a href="#">Something else here</a></li>
-				<li role="separator" class="divider"></li>
-				<li><a href="#">Separated link</a></li>
+				<li><a href="#">Add 1 to Cart</a></li>
+				<li><a href="#">Add 2 to Cart</a></li>
+				<li><a href="#">Add 5 to Cart</a></li>
+				<!--li role="separator" class="divider"></li>
+				<li><a href="#">Separated link</a></li-->
 			  </ul>
 			</div>
           </div>
@@ -548,11 +536,11 @@
 				$4.99 (0) <span class="caret"></span>
 			  </button>
 			  <ul class="dropdown-menu">
-				<li><a href="#">Action</a></li>
-				<li><a href="#">Another action</a></li>
-				<li><a href="#">Something else here</a></li>
-				<li role="separator" class="divider"></li>
-				<li><a href="#">Separated link</a></li>
+				<li><a href="#">Add 1 to Cart</a></li>
+				<li><a href="#">Add 2 to Cart</a></li>
+				<li><a href="#">Add 5 to Cart</a></li>
+				<!--li role="separator" class="divider"></li>
+				<li><a href="#">Separated link</a></li-->
 			  </ul>
 			</div>
           </div>
@@ -566,11 +554,11 @@
 				$4.99 (0) <span class="caret"></span>
 			  </button>
 			  <ul class="dropdown-menu">
-				<li><a href="#">Action</a></li>
-				<li><a href="#">Another action</a></li>
-				<li><a href="#">Something else here</a></li>
-				<li role="separator" class="divider"></li>
-				<li><a href="#">Separated link</a></li>
+				<li><a href="#">Add 1 to Cart</a></li>
+				<li><a href="#">Add 2 to Cart</a></li>
+				<li><a href="#">Add 5 to Cart</a></li>
+				<!--li role="separator" class="divider"></li>
+				<li><a href="#">Separated link</a></li-->
 			  </ul>
 			</div>
           </div>
@@ -584,11 +572,11 @@
 				$4.99 (0) <span class="caret"></span>
 			  </button>
 			  <ul class="dropdown-menu">
-				<li><a href="#">Action</a></li>
-				<li><a href="#">Another action</a></li>
-				<li><a href="#">Something else here</a></li>
-				<li role="separator" class="divider"></li>
-				<li><a href="#">Separated link</a></li>
+				<li><a href="#">Add 1 to Cart</a></li>
+				<li><a href="#">Add 2 to Cart</a></li>
+				<li><a href="#">Add 5 to Cart</a></li>
+				<!--li role="separator" class="divider"></li>
+				<li><a href="#">Separated link</a></li-->
 			  </ul>
 			</div>
           </div>
@@ -602,11 +590,11 @@
 				$4.99 (0) <span class="caret"></span>
 			  </button>
 			  <ul class="dropdown-menu">
-				<li><a href="#">Action</a></li>
-				<li><a href="#">Another action</a></li>
-				<li><a href="#">Something else here</a></li>
-				<li role="separator" class="divider"></li>
-				<li><a href="#">Separated link</a></li>
+				<li><a href="#">Add 1 to Cart</a></li>
+				<li><a href="#">Add 2 to Cart</a></li>
+				<li><a href="#">Add 5 to Cart</a></li>
+				<!--li role="separator" class="divider"></li>
+				<li><a href="#">Separated link</a></li-->
 			  </ul>
 			</div>
           </div>
@@ -620,11 +608,11 @@
 				$4.99 (0) <span class="caret"></span>
 			  </button>
 			  <ul class="dropdown-menu">
-				<li><a href="#">Action</a></li>
-				<li><a href="#">Another action</a></li>
-				<li><a href="#">Something else here</a></li>
-				<li role="separator" class="divider"></li>
-				<li><a href="#">Separated link</a></li>
+				<li><a href="#">Add 1 to Cart</a></li>
+				<li><a href="#">Add 2 to Cart</a></li>
+				<li><a href="#">Add 5 to Cart</a></li>
+				<!--li role="separator" class="divider"></li>
+				<li><a href="#">Separated link</a></li-->
 			  </ul>
 			</div>
           </div>
@@ -638,11 +626,11 @@
 				$4.99 (0) <span class="caret"></span>
 			  </button>
 			  <ul class="dropdown-menu">
-				<li><a href="#">Action</a></li>
-				<li><a href="#">Another action</a></li>
-				<li><a href="#">Something else here</a></li>
-				<li role="separator" class="divider"></li>
-				<li><a href="#">Separated link</a></li>
+				<li><a href="#">Add 1 to Cart</a></li>
+				<li><a href="#">Add 2 to Cart</a></li>
+				<li><a href="#">Add 5 to Cart</a></li>
+				<!--li role="separator" class="divider"></li>
+				<li><a href="#">Separated link</a></li-->
 			  </ul>
 			</div>
           </div>
@@ -656,11 +644,11 @@
 				$4.99 (0) <span class="caret"></span>
 			  </button>
 			  <ul class="dropdown-menu">
-				<li><a href="#">Action</a></li>
-				<li><a href="#">Another action</a></li>
-				<li><a href="#">Something else here</a></li>
-				<li role="separator" class="divider"></li>
-				<li><a href="#">Separated link</a></li>
+				<li><a href="#">Add 1 to Cart</a></li>
+				<li><a href="#">Add 2 to Cart</a></li>
+				<li><a href="#">Add 5 to Cart</a></li>
+				<!--li role="separator" class="divider"></li>
+				<li><a href="#">Separated link</a></li-->
 			  </ul>
 			</div>
           </div>
@@ -674,11 +662,11 @@
 				$4.99 (0) <span class="caret"></span>
 			  </button>
 			  <ul class="dropdown-menu">
-				<li><a href="#">Action</a></li>
-				<li><a href="#">Another action</a></li>
-				<li><a href="#">Something else here</a></li>
-				<li role="separator" class="divider"></li>
-				<li><a href="#">Separated link</a></li>
+				<li><a href="#">Add 1 to Cart</a></li>
+				<li><a href="#">Add 2 to Cart</a></li>
+				<li><a href="#">Add 5 to Cart</a></li>
+				<!--li role="separator" class="divider"></li>
+				<li><a href="#">Separated link</a></li-->
 			  </ul>
 			</div>
           </div>
@@ -692,11 +680,11 @@
 				$4.99 (0) <span class="caret"></span>
 			  </button>
 			  <ul class="dropdown-menu">
-				<li><a href="#">Action</a></li>
-				<li><a href="#">Another action</a></li>
-				<li><a href="#">Something else here</a></li>
-				<li role="separator" class="divider"></li>
-				<li><a href="#">Separated link</a></li>
+				<li><a href="#">Add 1 to Cart</a></li>
+				<li><a href="#">Add 2 to Cart</a></li>
+				<li><a href="#">Add 5 to Cart</a></li>
+				<!--li role="separator" class="divider"></li>
+				<li><a href="#">Separated link</a></li-->
 			  </ul>
 			</div>
           </div>
@@ -710,11 +698,11 @@
 				$4.99 (0) <span class="caret"></span>
 			  </button>
 			  <ul class="dropdown-menu">
-				<li><a href="#">Action</a></li>
-				<li><a href="#">Another action</a></li>
-				<li><a href="#">Something else here</a></li>
-				<li role="separator" class="divider"></li>
-				<li><a href="#">Separated link</a></li>
+				<li><a href="#">Add 1 to Cart</a></li>
+				<li><a href="#">Add 2 to Cart</a></li>
+				<li><a href="#">Add 5 to Cart</a></li>
+				<!--li role="separator" class="divider"></li>
+				<li><a href="#">Separated link</a></li-->
 			  </ul>
 			</div>
           </div>
@@ -728,11 +716,11 @@
 				$4.99 (0) <span class="caret"></span>
 			  </button>
 			  <ul class="dropdown-menu">
-				<li><a href="#">Action</a></li>
-				<li><a href="#">Another action</a></li>
-				<li><a href="#">Something else here</a></li>
-				<li role="separator" class="divider"></li>
-				<li><a href="#">Separated link</a></li>
+				<li><a href="#">Add 1 to Cart</a></li>
+				<li><a href="#">Add 2 to Cart</a></li>
+				<li><a href="#">Add 5 to Cart</a></li>
+				<!--li role="separator" class="divider"></li>
+				<li><a href="#">Separated link</a></li-->
 			  </ul>
 			</div>
           </div>
@@ -746,11 +734,11 @@
 				$4.99 (0) <span class="caret"></span>
 			  </button>
 			  <ul class="dropdown-menu">
-				<li><a href="#">Action</a></li>
-				<li><a href="#">Another action</a></li>
-				<li><a href="#">Something else here</a></li>
-				<li role="separator" class="divider"></li>
-				<li><a href="#">Separated link</a></li>
+				<li><a href="#">Add 1 to Cart</a></li>
+				<li><a href="#">Add 2 to Cart</a></li>
+				<li><a href="#">Add 5 to Cart</a></li>
+				<!--li role="separator" class="divider"></li>
+				<li><a href="#">Separated link</a></li-->
 			  </ul>
 			</div>
           </div>
@@ -764,11 +752,11 @@
 				$4.99 (0) <span class="caret"></span>
 			  </button>
 			  <ul class="dropdown-menu">
-				<li><a href="#">Action</a></li>
-				<li><a href="#">Another action</a></li>
-				<li><a href="#">Something else here</a></li>
-				<li role="separator" class="divider"></li>
-				<li><a href="#">Separated link</a></li>
+				<li><a href="#">Add 1 to Cart</a></li>
+				<li><a href="#">Add 2 to Cart</a></li>
+				<li><a href="#">Add 5 to Cart</a></li>
+				<!--li role="separator" class="divider"></li>
+				<li><a href="#">Separated link</a></li-->
 			  </ul>
 			</div>
           </div>
@@ -782,11 +770,11 @@
 				$4.99 (0) <span class="caret"></span>
 			  </button>
 			  <ul class="dropdown-menu">
-				<li><a href="#">Action</a></li>
-				<li><a href="#">Another action</a></li>
-				<li><a href="#">Something else here</a></li>
-				<li role="separator" class="divider"></li>
-				<li><a href="#">Separated link</a></li>
+				<li><a href="#">Add 1 to Cart</a></li>
+				<li><a href="#">Add 2 to Cart</a></li>
+				<li><a href="#">Add 5 to Cart</a></li>
+				<!--li role="separator" class="divider"></li>
+				<li><a href="#">Separated link</a></li-->
 			  </ul>
 			</div>
           </div>
@@ -800,11 +788,11 @@
 				$4.99 (0) <span class="caret"></span>
 			  </button>
 			  <ul class="dropdown-menu">
-				<li><a href="#">Action</a></li>
-				<li><a href="#">Another action</a></li>
-				<li><a href="#">Something else here</a></li>
-				<li role="separator" class="divider"></li>
-				<li><a href="#">Separated link</a></li>
+				<li><a href="#">Add 1 to Cart</a></li>
+				<li><a href="#">Add 2 to Cart</a></li>
+				<li><a href="#">Add 5 to Cart</a></li>
+				<!--li role="separator" class="divider"></li>
+				<li><a href="#">Separated link</a></li-->
 			  </ul>
 			</div>
           </div>
@@ -818,11 +806,11 @@
 				$4.99 (0) <span class="caret"></span>
 			  </button>
 			  <ul class="dropdown-menu">
-				<li><a href="#">Action</a></li>
-				<li><a href="#">Another action</a></li>
-				<li><a href="#">Something else here</a></li>
-				<li role="separator" class="divider"></li>
-				<li><a href="#">Separated link</a></li>
+				<li><a href="#">Add 1 to Cart</a></li>
+				<li><a href="#">Add 2 to Cart</a></li>
+				<li><a href="#">Add 5 to Cart</a></li>
+				<!--li role="separator" class="divider"></li>
+				<li><a href="#">Separated link</a></li-->
 			  </ul>
 			</div>
           </div>
