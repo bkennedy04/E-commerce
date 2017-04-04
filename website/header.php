@@ -67,11 +67,12 @@
 	  <a href="#" class="list-group-item">Vegetarian</a>
 	  <a href="#" class="list-group-item">Italian</a>
 	  <a href="#" class="list-group-item">American</a>
+	  <a href="#" class="list-group-item">Drinks</a>
 	</div>
 	<div class="list" style="margin-bottom: 15px">
 	  <span class="list-group-item active" style="font-weight: bold">Tools</span>
 	  <a href="all_recipes.php" class ="list-group-item">All Recipes</a>
-	  <a href="#" class="list-group-item">Popular Recipes</a>
-	  <a href="#" class="list-group-item">I'm Feeling Lucky</a>
+	  <a href="popular_recipes.php" class="list-group-item">Popular Recipes</a>
+	  <a href="feeling_lucky.php" class="list-group-item">I'm Feeling Lucky</a>
 	</div>
   </div>  
