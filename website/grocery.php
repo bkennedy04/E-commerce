@@ -20,11 +20,23 @@
           <img src="img/garlic salt.jpg" alt="Garlic Salt" class="img-rounded" />
             <h3 style="text-align: center">Garlic Salt</h3>
             <div class="btn-group btn-block">
+			  <!--button type="button" class="btn btn-primary">
+				<form>
+				  $4.99
+				  <input type="number" name="quantity" min="1" max="5">
+				</form>
+			  </button-->
 			  <div id="amount_btn"><a href="newexample.php?recipe_id=<?php echo $row["recipe_id"]; ?>" class="btn btn-primary" role="button"><form>
 				  $4.99
 				  <input type="number" name="quantity" min="1" max="5">
-				</form></a>
-			  </div>
+				</form></a></div>
+			  <!--ul class="dropdown-menu">
+				<li><a href="#">Add 1 to Cart</a></li>
+				<li><a href="#">Add 2 to Cart</a></li>
+				<li><a href="#">Add 5 to Cart</a></li>
+				<!--li role="separator" class="divider"></li>
+				<li><a href="#">Separated link</a></li>
+			  </ul-->
 			</div>
           </div>
         </div>
