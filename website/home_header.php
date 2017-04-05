@@ -46,13 +46,6 @@
 
       </ul>
       <ul class="nav navbar-nav navbar-right">
-		<li>		
-			<form class="navbar-form navbar-left">
-				<div class="form-group">
-				  <input type="text" class="form-control" placeholder="Search">
-				</div>
-			</form>
-		</li>
         <li><a href="#">Help</a></li>
         <!--li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>

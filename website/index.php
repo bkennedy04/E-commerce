@@ -1,7 +1,7 @@
 
 <?php
 	$page_name = "Home";
-	include "header.php"; 
+	include "home_header.php"; 
 ?>
 
   <div class="col-sm-10 suggested-recipes">
