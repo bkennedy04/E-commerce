@@ -43,13 +43,13 @@
             <li><a href="#">One more separated link</a></li>
           </ul>
         </li-->
-
+		
       </ul>
       <ul class="nav navbar-nav navbar-right">
 		<li>		
-			<form class="navbar-form navbar-left">
+			<form action="search.php" method="post" class="navbar-form navbar-left">
 				<div class="form-group">
-				  <input type="text" class="form-control" placeholder="Search">
+				  <input type="text" class="form-control" name="search" placeholder="Search">
 				</div>
 			</form>
 		</li>
