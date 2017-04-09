@@ -14,8 +14,10 @@ if ($result0->num_rows > 0) {
 	
 		$query2 = "SELECT * FROM recipe JOIN ingredients ON ingredients.recipe_id = recipe.recipe_id WHERE recipe.recipe_id = " . $row["recipe_id"];
 		$query3 = "SELECT steps, dir FROM directions WHERE recipe_id = " . $row["recipe_id"] ." ORDER BY dir ASC";
+		$query4 = "SELECT recipe_id FROM recipe WHERE recipe_id = " . $row["recipe_id"];
 		$result2 = $conn->query($query2);
 		$result3 = $conn->query($query3);
+		$result4 = $conn->query($query4);
 
 				
 ?>
@@ -50,10 +52,14 @@ if ($result0->num_rows > 0) {
 			echo "0 results";
 		}
 
+		
+		if ($result4->num_rows > 0) {
+					// output data of each row
+					if($row = $result4->fetch_array()) {
 ?>
 
 						</ul>
-						<div id="buy_ingredients_btn" class="buy-ingredients-btn"><a href="#" class="btn btn-primary btn-lg btn-block" role="button">Get Ingredients</a></div>
+						<div id="buy_ingredients_btn" class="buy-ingredients-btn"><a href="get_ingredients.php?recipe_id=<?php echo $row["recipe_id"];?>" class="btn btn-primary btn-lg btn-block" role="button">Get Ingredients</a></div>
 					</div>
 
 					<div class="row">
@@ -61,6 +67,8 @@ if ($result0->num_rows > 0) {
 							<h2>Directions</h2>
 							<ol type="1">
 <?php
+					}
+		}
 
 		if ($result3->num_rows > 0) {
 			// output data of each row
