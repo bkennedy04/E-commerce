@@ -76,7 +76,7 @@ $result1 = $conn->query($sql1);
           <img src="<?php echo $row["img"];?>" alt="<?php echo $row["title"];?>" class="img-rounded" />
             <h3 style="text-align: center"><?php echo $row["title"];?></h3>
             <div class="btn-group btn-block">
-			  <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+			  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
 				$<?php echo $row["price"];?><span class="caret"></span>
 			  </button>
 			  <ul class="dropdown-menu">
