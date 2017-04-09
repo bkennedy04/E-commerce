@@ -1,9 +1,13 @@
 <?php
-	$page_name = "Grocery";
+	$page_name = "Grocery Store";
 	include "header.php"; 
+	include "db_connect.php";
+	
+	$query0 = "SELECT title, img, price FROM grocery";
+	$result0 = $conn->query($query0);
 ?>
-<!--Did not include Kosher Salt, considered it was the same as regular salt-->
-  <div id="groceries" class="col-sm-10">
+	
+	<div id="groceries" class="col-sm-10">
     <div class="row">
       <div id="grocery_item" class="col-md-2">
         <div class="thumbnail">
@@ -798,12 +802,27 @@
           </div>
         </div>
 		<div id="grocery_item" class="col-md-2">
+	
+<?php
+	if($result0->num_rows > 0) {
+		// output data of each row
+		while($row = $result0->fetch_array()) {
+	
+
+?>
+
+
+
+
+      <div id="grocery_item" class="col-md-2">
         <div class="thumbnail">
-          <img src="img/ground coffee.jpg" alt="Ground Coffee" class="img-rounded" />
-            <h3 style="text-align: center">Ground Coffee</h3>
+          <img src="<?php echo $row["img"];?>" alt="<?php echo $row["title"];?>" class="img-rounded" />
+            <h3 style="text-align: center"><?php echo $row["title"];?></h3>
             <div class="btn-group btn-block">
 			  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
 				$4.99 (0) <span class="caret"></span>
+			  <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+				$<?php echo $row["price"];?><span class="caret"></span>
 			  </button>
 			  <ul class="dropdown-menu">
 				<li><a href="#">Add 1 to Cart</a></li>
@@ -815,7 +834,15 @@
 			</div>
           </div>
         </div>
-    </div>
-	</div>
 
+
+
+<?php 
+
+		}
+	}
+?>
+	</div>
+	</div>
+	
 <?php include "footer.php";?>
