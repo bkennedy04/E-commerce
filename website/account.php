@@ -1,6 +1,6 @@
 <?php
 	$page_name = "User Account";
-	include "header.php"; 
+	include "cartheader.php"; 
 	include "db_connect.php";
 	
 	//$query0 = "SELECT title, img, price FROM grocery";
