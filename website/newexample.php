@@ -51,7 +51,7 @@ else{
 ?>
 
 				</ul>
-				<div id="buy_ingredients_btn" class="buy-ingredients-btn"><a href="#" class="btn btn-primary btn-lg btn-block" role="button">Get Ingredients</a></div>
+				<div id="buy_ingredients_btn" class="buy-ingredients-btn"><a href="get_ingredients.php?recipe_id=<?php echo $_GET["recipe_id"];?>" class="btn btn-primary btn-lg btn-block" role="button">Get Ingredients</a></div>
 			</div>
 
 			<div class="row">

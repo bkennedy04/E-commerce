@@ -1,25 +1,25 @@
 <?php
-	$page_name = "Grocery Store";
-	include "header.php"; 
-	include "db_connect.php";
-	
-	$query0 = "SELECT title, img, price FROM grocery";
-	$result0 = $conn->query($query0);
+include "db_connect.php";
+$page_name = "Ingredients";
+include "header.php";
+
+
+$query1 = "SELECT * FROM grocery JOIN ingredients ON ingredients.ingredient_id = grocery.ingredient_id WHERE recipe_id = " .$_GET["recipe_id"];
+$result1 = $conn->query($query1);
 ?>
-	
+
 	<div id="groceries" class="col-sm-10">
     <div class="row">
 	
-<?php
-	if($result0->num_rows > 0) {
-		// output data of each row
-		while($row = $result0->fetch_array()) {
 	
-
+<?php
+if ($result1->num_rows > 0) {
+	// output data of each row
+	while($row = $result1->fetch_array()) {
+		
 ?>
-
-
-
+		
+			
 
       <div id="grocery_item" class="col-md-2">
         <div class="thumbnail">
@@ -46,8 +46,11 @@
 
 		}
 	}
+	
 ?>
 	</div>
 	</div>
 	
+	
 <?php include "footer.php";?>
+		
