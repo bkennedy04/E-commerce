@@ -11,9 +11,9 @@ body {
 /* ~~ Element/tag selectors ~~ */
 #title {
 	margin: auto;
-    width: 100%;
-    border: 3px ridge silver;
-    padding: 5px;
+    	width: 100%;
+    	border: 3px ridge silver;
+    	padding: 5px;
 	border-radius: 8px;
 	background-color: teal;
 }
