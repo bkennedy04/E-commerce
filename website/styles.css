@@ -162,3 +162,12 @@ body {
 	margin:5px;
 }
 
+#account {
+	border: 5px silver solid;
+	border-radius: 3px;
+}
+
+#account_entry {
+	margin-left:5px;
+}
+

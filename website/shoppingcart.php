@@ -91,6 +91,11 @@
 	</div>
 </div>
 <div class="row">
+	<div class="col-md-9" style="padding-bottom:10px">
+		<h3 style="text-align:right">Total (3 Items): $14.96</h3>
+	</div>
+</div>
+<div class="row">
 	<div class="col-sm-10" style="text-align:right">
 		<div class="go-to-grocery-btn"><a href="grocery.php" class="btn btn-lg btn-primary" role="button">Continue Shopping</a></div>
 	</div>
