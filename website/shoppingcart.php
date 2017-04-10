@@ -3,7 +3,7 @@
 	include "cartheader.php"; 
 	include "db_connect.php";
 	
-	$query0 = "SELECT title, img, price FROM grocery";
+	$query0 = "SELECT title,price,quantity,total FROM cart";
 	$result0 = $conn->query($query0);
 ?>
 <div class="row">
@@ -23,10 +23,18 @@
 			</tr>
 		  </thead>
 		  <tbody>
+
+<?php
+	if($result0->num_rows > 0) {
+		// output data of each row
+		while($row = $result0->fetch_array()) {
+	
+
+?>
 			<tr>
 			  <th scope="row">1</th>
-			  <td>Butter</td>
-			  <td>$4.99</td>
+			  <td><?php echo $row["title"];?></td>
+			  <td>$<?php echo $row["price"];?></td>
 			  <td>
 				<form>
 					<select class="custom-select">
@@ -44,9 +52,16 @@
 				</button>
 			  </td>
 			</tr>
-			<tr>
+
+<?php 
+
+		}
+	}
+?>
+
+			<!--tr>
 			  <th scope="row">2</th>
-			  <td>Pork Shoulder</td>
+			  <td>Butter</td>
 			  <td>$4.99</td>
 			  <td>
 				<form>
@@ -85,14 +100,14 @@
 					Remove Item
 				</button>
 			  </td>
-			</tr>
+			</tr-->
 		  </tbody>
 		</table>
 	</div>
 </div>
 <div class="row">
 	<div class="col-md-9" style="padding-bottom:10px">
-		<h3 style="text-align:right">Total (3 Items): $14.96</h3>
+		<h3 style="text-align:right">Total (<?php echo $row["price"];?> Items): $<?php echo $row["total"];?></h3>
 	</div>
 </div>
 <div class="row">
