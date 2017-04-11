@@ -3,7 +3,7 @@
 	include "header.php"; 
 	include "db_connect.php";
 	
-	$query0 = "SELECT title, img, price FROM grocery ORDER BY title";
+	$query0 = "SELECT title, img, price, item_id FROM grocery ORDER BY title";
 	$result0 = $conn->query($query0);
 ?>
 	
@@ -25,7 +25,7 @@
 				$<?php echo $row["price"];?><span class="caret"></span>
 			  </button>
 			  <ul class="dropdown-menu">
-				<li><a href="#">Add to Cart</a></li>
+				<li><a href="add_to_cart.php?item_id=<?php echo $row["item_id"]; ?>">Add to Cart</a></li>
 				<!--li role="separator" class="divider"></li>
 				<li><a href="#">Separated link</a></li-->
 			  </ul>

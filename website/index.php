@@ -2,6 +2,29 @@
 <?php
 	$page_name = "Home";
 	include "home_header.php"; 
+	session_start();
+	$id = session_id();
+	$_SESSION["id"] = $id;
+	include "db_connect.php";
+	$new_user = true;
+	$sql0 = "SELECT user_id FROM users";
+	$result0 = $conn->query($sql0);
+
+	if ($result0->num_rows > 0) {
+		// output data of each row
+		while($row = $result0->fetch_assoc()) {
+			
+			if($row["user_id"] == $_SESSION["id"]){
+				$new_user = false;
+			}
+		}
+	}
+	if($new_user == true){
+		$sql = "INSERT INTO users (user_id) VALUES ('".$_SESSION["id"]."')";
+
+		if ($conn->query($sql) === TRUE) {
+		}
+	}
 ?>
 
   <div class="col-sm-10 suggested-recipes">

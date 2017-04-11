@@ -96,13 +96,11 @@
 	</div>
 </div>
 <div class="row">
-	<div class="col-sm-10" style="text-align:right">
+	<div class="col-sm-6" style="text-align:right">
 		<div class="go-to-grocery-btn"><a href="grocery.php" class="btn btn-lg btn-primary" role="button">Continue Shopping</a></div>
 	</div>
-	<div class="col-sm-2" style="text-align:left">
-		<button type="button" class="btn btn-lg btn-warning dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-			Checkout
-		</button>
+	<div class="col-sm-6" style="text-align:left">
+		<div class="go-to-grocery-btn"><a href="#" class="btn btn-lg btn-warning" role="button">Checkout</a></div>
 	</div>
 </div>
 

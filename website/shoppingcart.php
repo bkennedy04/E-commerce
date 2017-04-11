@@ -1,30 +1,31 @@
 <?php
+	session_start();
 	$page_name = "Shopping Cart";
 	include "cartheader.php"; 
 	include "db_connect.php";
-	
-	$query0 = "SELECT title,price,quantity,total FROM cart";
-	$result0 = $conn->query($query0);
 ?>
+
 <div class="row">
 	<div class="col-sm-12" style="padding-bottom:15px">
 		<h1 style="text-align:center">Shopping Cart</h1>
 	</div>
 </div>
 <div class="row">
-	<div id="cart_table" class="col-sm-12">
+	<div id="cart_table" class="col-sm-12" >
 		<table class="table table-hover">
 		  <thead>
 			<tr>
 			  <th>Item</th>
 			  <th>Name</th>
 			  <th>Price</th>
-			  <th colspan=2>Quantity</th>
+			  <th>Quantity</th>
 			</tr>
 		  </thead>
 		  <tbody>
 
 <?php
+	$query0 = "SELECT title, price, img, cart.item_id, quantity FROM cart JOIN grocery ON cart.item_id = grocery.item_id WHERE cart.user_id = '".$_SESSION["id"]."'";
+	$result0 = $conn->query($query0);
 	if($result0->num_rows > 0) {
 		// output data of each row
 		while($row = $result0->fetch_array()) {
@@ -36,14 +37,16 @@
 			  <td><?php echo $row["title"];?></td>
 			  <td>$<?php echo $row["price"];?></td>
 			  <td>
-				<form>
-					<select class="custom-select">
+				<form action="quantity_processing.php?item_id=<?php echo $row["item_id"];?>" method="post">
+					<!--<input type="number" step="1" name="quantity" required>-->
+					<select name="quantity">
 					  <option selected value="1">1</option>
 					  <option value="2">2</option>
 					  <option value="3">3</option>
 					  <option value="4">4</option>
 					  <option value="5">5</option>
 					</select>
+					<input type="submit" value="Submit">
 				</form>
 			  </td>
 			  <td>
@@ -54,67 +57,47 @@
 			</tr>
 
 <?php 
-
 		}
 	}
+	else{
+		echo "Shopping Cart is empty!";
+	}
 ?>
-
-			<!--tr>
-			  <th scope="row">2</th>
-			  <td>Butter</td>
-			  <td>$4.99</td>
-			  <td>
-				<form>
-					<select class="custom-select">
-					  <option selected value="1">1</option>
-					  <option value="2">2</option>
-					  <option value="3">3</option>
-					  <option value="4">4</option>
-					  <option value="5">5</option>
-					</select>
-				</form>
-			  </td>
-			  <td>
-				<button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-					Remove Item
-				</button>
-			  </td>
-			</tr>
-			<tr>
-			  <th scope="row">3</th>
-			  <td>Salt</td>
-			  <td>$4.99</td>
-			  <td>
-				<form>
-					<select class="custom-select">
-					  <option selected value="1">1</option>
-					  <option value="2">2</option>
-					  <option value="3">3</option>
-					  <option value="4">4</option>
-					  <option value="5">5</option>
-					</select>
-				</form>
-			  </td>
-			  <td>
-				<button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-					Remove Item
-				</button>
-			  </td>
-			</tr-->
 		  </tbody>
 		</table>
 	</div>
 </div>
 <div class="row">
 	<div class="col-md-9" style="padding-bottom:10px">
-		<h3 style="text-align:right">Total (<?php echo $row["price"];?> Items): $<?php echo $row["total"];?></h3>
+		<h3 style="text-align:right">
+<?php
+			$sql1 = "SELECT SUM(quantity) AS quant FROM cart WHERE user_id = '".$_SESSION["id"]."'";
+			$result1 = $conn->query($sql1);
+			if ($result1->num_rows > 0) {
+				// output data of each row
+					if($row = $result1->fetch_assoc()) {
+						echo "Total (". ($row["quant"] != NULL ? $row["quant"] : "0") ." Items): ";
+					}
+			}
+			$sql2 = "SELECT quantity, price FROM cart JOIN grocery ON cart.item_id = grocery.item_id WHERE user_id = '".$_SESSION["id"]."'";
+			$result2 = $conn->query($sql2);
+			$total = 0.00;
+			if ($result2->num_rows > 0) {
+				// output data of each row
+				while($row = $result2->fetch_assoc()) {
+					$total += ($row["price"]* $row["quantity"]);
+				}
+			}
+			echo "$" .$total;
+?> 
+
 	</div>
 </div>
 <div class="row">
 	<div class="col-sm-10" style="text-align:right">
 		<div class="go-to-grocery-btn"><a href="grocery.php" class="btn btn-lg btn-primary" role="button">Continue Shopping</a></div>
 	</div>
-	<div class="col-sm-2" style="text-align:left">
+	<div class="col-sm-2">
 		<button type="button" class="btn btn-lg btn-warning dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
 			Checkout
 		</button>
