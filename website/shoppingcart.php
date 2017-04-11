@@ -1,5 +1,8 @@
 <?php
-	session_start();
+    if(!isset($_SESSION)) 
+    { 
+        session_start(); 
+    } 
 	$page_name = "Shopping Cart";
 	include "cartheader.php"; 
 	include "db_connect.php";
@@ -38,21 +41,19 @@
 			  <td>$<?php echo $row["price"];?></td>
 			  <td>
 				<form action="quantity_processing.php?item_id=<?php echo $row["item_id"];?>" method="post">
-					<!--<input type="number" step="1" name="quantity" required>-->
-					<select name="quantity">
+					<input type="number" value="<?php echo $row["quantity"]; ?>" name="quantity" style="width: 35px;" required>
+					<!--<select name="quantity">
 					  <option selected value="1">1</option>
 					  <option value="2">2</option>
 					  <option value="3">3</option>
 					  <option value="4">4</option>
 					  <option value="5">5</option>
-					</select>
+					</select>-->
 					<input type="submit" value="Submit">
 				</form>
 			  </td>
 			  <td>
-				<button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-					Remove Item
-				</button>
+				<a href="remove_item.php?item_id=<?php echo $row["item_id"];?>" class="btn btn-sm btn-danger" role="button">Remove Item</a>
 			  </td>
 			</tr>
 
