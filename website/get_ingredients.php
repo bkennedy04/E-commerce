@@ -30,7 +30,7 @@ if ($result1->num_rows > 0) {
 				$<?php echo $row["price"];?><span class="caret"></span>
 			  </button>
 			  <ul class="dropdown-menu">
-				<li><a href="#">Add to Cart</a></li>
+				<li><a href="add_to_cart.php?item_id=<?php echo $row["item_id"]; ?>">Add to Cart</a></li>
 			  </ul>
 			</div>
           </div>

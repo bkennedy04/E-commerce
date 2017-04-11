@@ -32,10 +32,24 @@ if ($result->num_rows > 0) {
 		else {
 			include "header.php";
 			echo "Error updating cart: " . $conn->error;
+			include "footer.php";
 		}
 	
 	}
 }
+else{
+	$sql = "INSERT INTO cart (item_id, user_id) VALUES ('".$_GET["item_id"]."', '".$_SESSION["id"]."')";
+
+	if ($conn->query($sql) === TRUE) {
+		include "shoppingcart.php";
+	} 
+	else {
+		include "header.php";
+		echo "Error updating cart: " . $conn->error;
+		include "footer.php";
+	}
+}
+
 
 
 
@@ -45,4 +59,3 @@ if ($result->num_rows > 0) {
 
 
 	
-<?php include "footer.php";?>
