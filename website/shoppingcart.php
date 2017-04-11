@@ -29,6 +29,7 @@
 <?php
 	$query0 = "SELECT title, price, img, cart.item_id, quantity FROM cart JOIN grocery ON cart.item_id = grocery.item_id WHERE cart.user_id = '".$_SESSION["id"]."'";
 	$result0 = $conn->query($query0);
+	$num = 1;
 	if($result0->num_rows > 0) {
 		// output data of each row
 		while($row = $result0->fetch_array()) {
@@ -36,7 +37,7 @@
 
 ?>
 			<tr>
-			  <th scope="row">1</th>
+			  <th scope="row"><?php echo $num;?></th>
 			  <td><?php echo $row["title"];?></td>
 			  <td>$<?php echo $row["price"];?></td>
 			  <td>
@@ -58,6 +59,7 @@
 			</tr>
 
 <?php 
+			$num++;
 		}
 	}
 	else{
