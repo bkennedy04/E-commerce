@@ -99,9 +99,8 @@
 		<div class="go-to-grocery-btn"><a href="grocery.php" class="btn btn-lg btn-primary" role="button">Continue Shopping</a></div>
 	</div>
 	<div class="col-sm-2">
-		<button type="button" class="btn btn-lg btn-warning dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-			Checkout
-		</button>
+		<div class="go-to-grocery-btn"><a href="checkout.php" class="btn btn-lg btn-success" role="button">Checkout</a></div>
+
 	</div>
 </div>
 
