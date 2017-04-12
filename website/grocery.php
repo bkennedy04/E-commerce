@@ -16,7 +16,7 @@
 	
 
 ?>
-      <div id="grocery_item" class="col-md-2">
+      <div id="grocery_item" class="col-xs-6 col-sm-2 col-md-2 col-lg-2">
         <div class="thumbnail">
           <img src="<?php echo $row["img"];?>" alt="<?php echo $row["title"];?>" class="img-rounded" />
             <h3 style="text-align: center"><?php echo $row["title"];?></h3>

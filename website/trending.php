@@ -11,7 +11,7 @@ if ($result->num_rows > 0) {
 	while($row = $result->fetch_array()) {
 ?>
 
-<div class="col-sm-2">
+<div class="col-xs-6 col-sm-2 col-md-2 col-lg-2">
   <div class="thumbnail">
     <img src="<?php echo $row["image_url"] ?>" alt="<?php echo $row["title"]; ?>" class="img-rounded" />
     <span class="badge" style="font-weight: bold; position: absolute; margin: -60% 0 0 5%; opacity: 0.75">
