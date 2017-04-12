@@ -42,7 +42,7 @@
 			  <td>$<?php echo $row["price"];?></td>
 			  <td>
 				<form action="quantity_processing.php?item_id=<?php echo $row["item_id"];?>" method="post">
-					<input type="number" value="<?php echo $row["quantity"]; ?>" name="quantity" style="width: 35px;" required>
+					<input type="number" value="<?php echo $row["quantity"]; ?>" name="quantity" min="1" style="width: 35px;" required>
 					<!--<select name="quantity">
 					  <option selected value="1">1</option>
 					  <option value="2">2</option>
