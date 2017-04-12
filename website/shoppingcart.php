@@ -9,12 +9,12 @@
 ?>
 
 <div class="row">
-	<div class="col-sm-12" style="padding-bottom:15px">
+	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="padding-bottom:15px">
 		<h1 style="text-align:center">Shopping Cart</h1>
 	</div>
 </div>
 <div class="row">
-	<div id="cart_table" class="col-sm-12" >
+	<div id="cart_table" class="col-xs-12 col-sm-12 col-md-12 col-lg-12" >
 		<table class="table table-hover">
 		  <thead>
 			<tr>
@@ -71,8 +71,8 @@
 	</div>
 </div>
 <div class="row">
-	<div class="col-md-9" style="padding-bottom:10px">
-		<h3 style="text-align:right">
+	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="padding-bottom:10px">
+		<h3 style="text-align:center">
 <?php
 			$sql1 = "SELECT SUM(quantity) AS quant FROM cart WHERE user_id = '".$_SESSION["id"]."'";
 			$result1 = $conn->query($sql1);
@@ -97,11 +97,9 @@
 	</div>
 </div>
 <div class="row">
-	<div class="col-sm-10" style="text-align:right">
-		<div class="go-to-grocery-btn"><a href="grocery.php" class="btn btn-lg btn-primary" role="button">Continue Shopping</a></div>
-	</div>
-	<div class="col-sm-2">
-		<div class="go-to-grocery-btn"><a href="checkout.php" class="btn btn-lg btn-success" role="button">Checkout</a></div>
+	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="text-align:center;">
+		<div class="go-to-grocery-btn" style="padding-bottom:10px"><a href="grocery.php" class="btn btn-lg btn-primary" role="button" style="width: 200px;">Continue Shopping</a></div>
+		<div class="go-to-grocery-btn"><a href="checkout.php" class="btn btn-lg btn-success" role="button" style="width: 200px">Checkout</a></div>
 
 	</div>
 </div>
