@@ -27,7 +27,7 @@
 	}
 ?>
 
-  <div class="col-sm-10 suggested-recipes">
+  <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10 suggested-recipes">
 
     <div id="bar">
 		<form action="search.php" method="post">

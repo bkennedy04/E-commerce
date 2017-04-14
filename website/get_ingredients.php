@@ -8,7 +8,7 @@ $query1 = "SELECT * FROM grocery JOIN ingredients ON ingredients.ingredient_id =
 $result1 = $conn->query($query1);
 ?>
 
-	<div id="groceries" class="col-sm-10">
+	<div id="groceries" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
     <div class="row">
 	
 	
@@ -21,7 +21,7 @@ if ($result1->num_rows > 0) {
 		
 			
 
-      <div id="grocery_item" class="col-md-2">
+      <div id="grocery_item" class="col-xs-6 col-sm-6 col-md-2 col-lg-2">
         <div class="thumbnail">
           <img src="<?php echo $row["img"];?>" alt="<?php echo $row["title"];?>" class="img-rounded" />
             <h3 style="text-align: center"><?php echo $row["title"];?></h3>

@@ -17,7 +17,7 @@ if ($result1->num_rows > 0) {
 		include "header.php";
 		
 ?>
-		<div class="col-md-10">
+		<div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
 			<h1><?php echo $row["title"]; ?></h1>
 			<div class="col-md-5">
 			<img src="<?php echo $row["image_url"] ?>" alt="<?php echo $row["title"]; ?>" class="img-rounded" style="width: 100%;" />
@@ -55,7 +55,7 @@ else{
 			</div>
 
 			<div class="row">
-				<div id="instructions" class="col-lg-10">
+				<div id="instructions" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
 					<h2>Directions</h2>
 					<ol type="1">
 <?php

@@ -21,7 +21,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#"><span class="glyphicon glyphicon-cutlery">&nbsp;</span>EZ Recipes</a>
+      <a class="navbar-brand" href="index.php"><span class="glyphicon glyphicon-cutlery">&nbsp;</span>EZ Recipes</a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -69,7 +69,7 @@
 </nav>
 
 <div class="container-fluid">
-  <div class="col-sm-2" style="padding: 0; margin: 0;">
+  <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2" style="padding: 0; margin: 0;">
 	<div class="list" style="margin-bottom: 15px">
 	  <span class="list-group-item active" style="font-weight: bold">Categories</span>
 	  <a href="category.php?category=Vegetarian" class="list-group-item">Vegetarian</a>

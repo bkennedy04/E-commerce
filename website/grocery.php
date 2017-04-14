@@ -8,7 +8,7 @@
 ?>
 	
 	
-	<div class="col-md-10">
+	<div class="col-xs-12 col-sm-12 col-md-10 col-lg-10">
 <?php
 	if($result0->num_rows > 0) {
 		// output data of each row
