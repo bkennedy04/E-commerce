@@ -20,7 +20,7 @@ $result9 = $conn->query($query9);
 				<img src="<?php echo $row["image_url"] ?>" alt="<?php echo $row["title"]; ?>" class="img-rounded" />
 				<div class="caption">
 				  <h3><?php echo $row["title"]; ?></h3>
-				  <div class="go-to-recipe-btn"><a href="newexample.php?recipe_id=<?php echo $row["recipe_id"]; ?>" class="btn btn-primary" role="button">Go To Recipe</a></div>
+				  <div class="go-to-recipe-btn"><a href="go_to_recipe.php?recipe_id=<?php echo $row["recipe_id"]; ?>" class="btn btn-primary" role="button">Go To Recipe</a></div>
 				</div>
 			  </div>
 			</div>
@@ -45,7 +45,7 @@ $result9 = $conn->query($query9);
 						<img src="<?php echo $row["image_url"] ?>" alt="<?php echo $row["title"]; ?>" class="img-rounded" />
 						<div class="caption">
 						  <h3><?php echo $row["title"]; ?></h3>
-						  <div class="go-to-recipe-btn"><a href="newexample.php?recipe_id=<?php echo $row["recipe_id"]; ?>" class="btn btn-primary" role="button">Go To Recipe</a></div>
+						  <div class="go-to-recipe-btn"><a href="go_to_recipe.php?recipe_id=<?php echo $row["recipe_id"]; ?>" class="btn btn-primary" role="button">Go To Recipe</a></div>
 						</div>
 					  </div>
 					</div>
@@ -126,7 +126,7 @@ $result3 = $conn->query($query3);
 				<div class="caption">
 				  <h3><?php echo $row["title"]; ?></h3>
 				  <p></p>
-				  <div class="go-to-recipe-btn"><a href="newexample.php?recipe_id=<?php echo $row["recipe_id"]; ?>" class="btn btn-primary" role="button">Go To Recipe</a></div>
+				  <div class="go-to-recipe-btn"><a href="go_to_recipe.php?recipe_id=<?php echo $row["recipe_id"]; ?>" class="btn btn-primary" role="button">Go To Recipe</a></div>
 				</div>
 			  </div>
 			</div>

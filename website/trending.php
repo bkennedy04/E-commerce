@@ -26,7 +26,7 @@ if ($result->num_rows > 0) {
     <div class="caption">
       <h3><?php echo $row["title"]; ?></h3>
       <p></p>
-      <div class="go-to-recipe-btn"><a href="newexample.php?recipe_id=<?php echo $row["recipe_id"]; ?>" class="btn btn-primary" role="button">Go To Recipe</a></div>
+      <div class="go-to-recipe-btn"><a href="go_to_recipe.php?recipe_id=<?php echo $row["recipe_id"]; ?>" class="btn btn-primary" role="button">Go To Recipe</a></div>
     </div>
   </div>
 </div>
