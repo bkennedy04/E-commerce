@@ -99,7 +99,7 @@
 <div class="row">
 	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="text-align:center;">
 		<div class="go-to-grocery-btn" style="padding-bottom:10px"><a href="grocery.php" class="btn btn-lg btn-primary" role="button" style="width: 200px;">Continue Shopping</a></div>
-		<div class="go-to-grocery-btn"><a href="checkout.php" class="btn btn-lg btn-success" role="button" style="width: 200px">Checkout</a></div>
+		<div class="go-to-grocery-btn"><a href="payment.php" class="btn btn-lg btn-success" role="button" style="width: 200px">Checkout</a></div>
 
 	</div>
 </div>
