@@ -1,10 +1,13 @@
-
 <?php
+    if(!isset($_SESSION)) 
+    { 
+        session_start(); 
+		$id = session_id();
+		$_SESSION["id"] = $id;
+    }
 	$page_name = "Home";
 	include "home_header.php"; 
-	session_start();
-	$id = session_id();
-	$_SESSION["id"] = $id;
+
 	include "db_connect.php";
 	$new_user = true;
 	$sql0 = "SELECT user_id FROM users";
