@@ -32,7 +32,7 @@
 				<label for="exampleInputEmail1">Phone Number</label>
 				<input type="email" class="form-control" id="exampleInputEmail1" placeholder="(502) 555-4567">
 			  </div>
-			  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="padding-bottom:15px">			  
+			  <div style="display: inline-block">			  
 				  <button type="button" class="btn btn-default pull-left" data-toggle="collapse" data-target="#card">Pay With Card : <img alt="Credit Card Logos" title="Credit Card Logos" src="http://www.credit-card-logos.com/images/multiple_credit-card-logos-1/credit_card_logos_17.gif" width="235" height="35" border="0" /></button>
 					  <div id="card" class="collapse">
 						  <div class="col-xs-12 col-sm-12 col-md-10 col-lg-10 col-lg-offset-1">
@@ -61,6 +61,7 @@
 						  </div>
 					  </div>
 				  </div>
+				  <!--
 				  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="padding-bottom:15px">
 					  <button type="button" class="btn btn-primary pull-left" data-toggle="collapse" data-target="#bank">Connect to Bank Account</button>
 					  <div id="bank" class="collapse">
@@ -78,6 +79,7 @@
 						  </div>
 					  </div>
 					  </div>
+					  -->
 				  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="padding-bottom:15px">
 					  <a href="test.php"><img src="https://www.paypal.com/en_US/i/btn/btn_xpressCheckout.gif" align="left" style="margin-right:7px;"></a>
 				  </div>
