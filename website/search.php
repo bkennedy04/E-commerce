@@ -4,7 +4,7 @@ include "header.php";
 include "db_connect.php"; 
 
 ?>
-<div class="col-md-10">
+<div class="col-xs-12 col-sm-12 col-md-10 col-lg-10">
 
 <?php
 $query9 = "SELECT DISTINCT title, recipe.recipe_id, image_url FROM recipe JOIN ingredients ON ingredients.recipe_id = recipe.recipe_id WHERE LOWER(ingredient_name) LIKE LOWER('%".$_POST["search"]."%')";
