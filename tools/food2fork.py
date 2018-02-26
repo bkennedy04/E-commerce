@@ -1,6 +1,8 @@
+# this script utilizes the food2fork api to pull recipes for website
+
 import requests, json
 
-key = '9f9a6a67713a2021786c3a9a89a05228'
+key = mykey
 search_url = 'http://food2fork.com/api/search'
 recipe_url = 'http://food2fork.com/api/get'
 
